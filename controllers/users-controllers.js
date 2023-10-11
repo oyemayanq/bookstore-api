@@ -24,6 +24,7 @@ async function signup(req, res, next) {
   try {
     user = await User.findOne({ email: email });
   } catch (err) {
+    console.log(err);
     return next(
       new HttpError("Signing up failed, please try again later.", 500)
     );

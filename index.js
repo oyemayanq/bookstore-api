@@ -15,7 +15,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use("/uploads/images", express.static(path.join("uploads", "images")));
+const dirname = path.resolve();
+app.use("/uploads", express.static(path.join(dirname, "uploads")));
 
 app.use(cors());
 
