@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}.mlbplu8.mongodb.net/store?retryWrites=true&w=majority`
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@bookstore.mlbplu8.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
     app.listen(8080, () => {
