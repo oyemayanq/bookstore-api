@@ -101,7 +101,7 @@ async function createBook(req, res, next) {
     publishedDate,
   });
 
-  console.log(book);
+  //console.log(book);
 
   try {
     await book.save();

@@ -48,7 +48,7 @@ async function signup(req, res, next) {
     );
     return next(error);
   }
-  console.log("hash", hashedPassword);
+  //console.log("hash", hashedPassword);
 
   const createdUser = new User({
     name,
