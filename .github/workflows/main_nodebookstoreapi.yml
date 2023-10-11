@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'nodebookstoreapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E70A1EE2D4BC4F029E6CB49E8F9FB06C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_10502A3FCBFE498085B479120715B538 }}
           package: .
